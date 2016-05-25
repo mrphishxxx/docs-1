@@ -61,15 +61,15 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css?q=500" />
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css?q=500" />
-	<script src="https://static-www.elastic.co/static/js/skel.min.js?q=500"></script>
+	<link type="text/css" rel="stylesheet" href="/static/css/skel.css?q=500" />
+	<link type="text/css" rel="stylesheet" href="/static/css/style.css?q=500" />
+	<script src="/static/js/skel.min.js?q=500"></script>
 	
-		<script type="text/javascript">form_name = "" ; cdn_url="https://static-www.elastic.co";cdn_slug = "500"</script>
+		<script type="text/javascript">form_name = "" ; cdn_slug = "500"</script>
 	
-	<script src="https://static-www.elastic.co/static/js/init.js?q=500"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.min.js?q=500"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.cookie.js?q=500"></script>
+	<script src="/static/js/init.js?q=500"></script>
+	<script src="/static/js/jquery.min.js?q=500"></script>
+	<script src="/static/js/jquery.cookie.js?q=500"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -965,15 +965,15 @@
 	
 	
 		.m-shortcuts li a.m-search {
-			background: url("https://static-www.elastic.co/assets/blt174b13be89ff803c/m-search-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
+			background: url("/assets/blt174b13be89ff803c/m-search-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 	
 		.m-shortcuts li a.m-docs {
-			background: url("https://static-www.elastic.co/assets/blt5ba03f594a7d610a/m-guide-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
+			background: url("/assets/blt5ba03f594a7d610a/m-guide-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 	
 		.m-shortcuts li a.m-contact {
-			background: url("https://static-www.elastic.co/assets/blt38c3e853c4b1174d/m-contact-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
+			background: url("/assets/blt38c3e853c4b1174d/m-contact-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 		
 </style>
@@ -1007,7 +1007,8 @@ version&#39;s documentation here</a>.
            
           <a href="file-output.html">File Output
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="kafka-output"></a>Kafka Output<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>The Kafka output sends the events to Apache Kafka.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_kafka_output_options"></a>Kafka Output Options<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>You can specify the following options in the <code class="literal">kafka</code> section:</p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_hosts_2"></a>hosts<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The list of Kafka broker addresses from where to fetch the cluster metadata.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_topic"></a>topic<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The Kafka topic used for produced events. If <code class="literal">use_type</code> is set to true, the topic will not be used.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_use_type"></a>use_type<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>Set Kafka topic by event type. If <code class="literal">use_type</code> is false, the <code class="literal">topic</code> option must be configured. The default is false.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_client_id"></a>client_id<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The configurable ClientID used for logging, debugging, and auditing purposes. The default is "beats".</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_worker_4"></a>worker<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The number of concurrent load-balanced Kafka output workers.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_max_retries_4"></a>max_retries<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The number of times to retry publishing an event after a publishing failure.
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="kafka-output"></a>Kafka Output<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>The Kafka output sends the events to Apache Kafka.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_kafka_output_options"></a>Kafka Output Options<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>You can specify the following options in the <code class="literal">kafka</code> section:</p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_hosts_2"></a>hosts<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The list of Kafka broker addresses from where to fetch the cluster metadata.
+The cluster metadata contain the actual Kafka brokers events are published to.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_topic"></a>topic<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The Kafka topic used for produced events. If <code class="literal">use_type</code> is set to true, the topic will not be used.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_use_type"></a>use_type<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>Set Kafka topic by event type. If <code class="literal">use_type</code> is false, the <code class="literal">topic</code> option must be configured. The default is false.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_client_id"></a>client_id<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The configurable ClientID used for logging, debugging, and auditing purposes. The default is "beats".</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_worker_4"></a>worker<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The number of concurrent load-balanced Kafka output workers.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_max_retries_4"></a>max_retries<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The number of times to retry publishing an event after a publishing failure.
 After the specified number of retries, the events are typically dropped.
 Some Beats, such as Filebeat, ignore the <code class="literal">max_retries</code> setting and retry until all
 events are published.</p><p>Set <code class="literal">max_retries</code> to a value less than 0 to retry until all events are published.</p><p>The default is 3.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_bulk_max_size_4"></a>bulk_max_size<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The maximum number of events to bulk in a single Kafka request. The default is 2048.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_timeout_4"></a>timeout<a href="https://github.com/elastic/beats/edit/master/filebeat/docsoutputconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The number of seconds to wait for responses from the Kafka brokers before timing
@@ -1117,15 +1118,15 @@ out. The default is 30 (seconds).</p></div><div class="section"><div class="titl
 
 <style type="text/css">
 	
-		.facebook{background:url("https://static-www.elastic.co/assets/bltda40eebd7c7cae9a/facebook.svg?q=500") no-repeat;}
+		.facebook{background:url("/assets/bltda40eebd7c7cae9a/facebook.svg?q=500") no-repeat;}
 	
-		.twitter{background:url("https://static-www.elastic.co/assets/bltfd3b1511512f4632/twitter.svg?q=500") no-repeat;}
+		.twitter{background:url("/assets/bltfd3b1511512f4632/twitter.svg?q=500") no-repeat;}
 	
-		.linkedin{background:url("https://static-www.elastic.co/assets/blt6b4f6f8d6b96f814/linkedin.svg?q=500") no-repeat;}
+		.linkedin{background:url("/assets/blt6b4f6f8d6b96f814/linkedin.svg?q=500") no-repeat;}
 	
-		.xing{background:url("https://static-www.elastic.co/assets/blta76b2ae2b2f10a98/xing.svg?q=500") no-repeat;}
+		.xing{background:url("/assets/blta76b2ae2b2f10a98/xing.svg?q=500") no-repeat;}
 	
-		.youtube{background:url("https://static-www.elastic.co/assets/blt5761648c9581fb53/youtube.svg?q=500") no-repeat;}
+		.youtube{background:url("/assets/blt5761648c9581fb53/youtube.svg?q=500") no-repeat;}
 	
 </style>
 
@@ -1150,8 +1151,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
    	<script type="text/javascript">
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 </script>
-<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js?q=500"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?q=500"></script>
+<script src="/static/js/jquery.autocomplete.js?q=500"></script>
+<script src="/static/js/script.js?q=500"></script>
 
 
    	

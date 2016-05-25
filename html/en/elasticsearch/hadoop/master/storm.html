@@ -61,15 +61,15 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css?q=500" />
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css?q=500" />
-	<script src="https://static-www.elastic.co/static/js/skel.min.js?q=500"></script>
+	<link type="text/css" rel="stylesheet" href="/static/css/skel.css?q=500" />
+	<link type="text/css" rel="stylesheet" href="/static/css/style.css?q=500" />
+	<script src="/static/js/skel.min.js?q=500"></script>
 	
-		<script type="text/javascript">form_name = "" ; cdn_url="https://static-www.elastic.co";cdn_slug = "500"</script>
+		<script type="text/javascript">form_name = "" ; cdn_slug = "500"</script>
 	
-	<script src="https://static-www.elastic.co/static/js/init.js?q=500"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.min.js?q=500"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.cookie.js?q=500"></script>
+	<script src="/static/js/init.js?q=500"></script>
+	<script src="/static/js/jquery.min.js?q=500"></script>
+	<script src="/static/js/jquery.cookie.js?q=500"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -965,15 +965,15 @@
 	
 	
 		.m-shortcuts li a.m-search {
-			background: url("https://static-www.elastic.co/assets/blt174b13be89ff803c/m-search-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
+			background: url("/assets/blt174b13be89ff803c/m-search-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 	
 		.m-shortcuts li a.m-docs {
-			background: url("https://static-www.elastic.co/assets/blt5ba03f594a7d610a/m-guide-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
+			background: url("/assets/blt5ba03f594a7d610a/m-guide-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 	
 		.m-shortcuts li a.m-contact {
-			background: url("https://static-www.elastic.co/assets/blt38c3e853c4b1174d/m-contact-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
+			background: url("/assets/blt38c3e853c4b1174d/m-contact-icon.png?q=500") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 		
 </style>
@@ -1007,9 +1007,9 @@ version&#39;s documentation here</a>.
            
           <a href="mapping.html">Mapping and Types
                »
-            </a></span></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a id="storm"></a>Apache Storm support<a href="https://github.com/elastic/elasticsearch-hadoop/edit/master/docs/src/reference/asciidoc/core/storm.adoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>Added in 2.1.</p></div></div><div class="blockquote"><table border="0" class="blockquote" summary="Block quote"><tr><td width="10%" valign="top"> </td><td width="80%" valign="top"><p><a class="ulink" href="http://storm.incubator.apache.org" target="_top">Apache Storm</a> is a free and open source distributed realtime computation system. Storm makes it easy to reliably process unbounded streams of data, doing for realtime processing what Hadoop did for batch processing.</p></td><td width="10%" valign="top"> </td></tr><tr><td width="10%" valign="top"> </td><td colspan="2" align="right" valign="top">--<span class="attribution">
+            </a></span></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a id="storm"></a>Apache Storm support<a href="https://github.com/elastic/elasticsearch-hadoop/edit/master/docs/src/reference/asciidoc/core/storm.adoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>Added in 2.1.</p></div></div><div class="blockquote"><table border="0" class="blockquote" summary="Block quote"><tr><td width="10%" valign="top"> </td><td width="80%" valign="top"><p><a class="ulink" href="http://storm.apache.org" target="_top">Apache Storm</a> is a free and open source distributed realtime computation system. Storm makes it easy to reliably process unbounded streams of data, doing for realtime processing what Hadoop did for batch processing.</p></td><td width="10%" valign="top"> </td></tr><tr><td width="10%" valign="top"> </td><td colspan="2" align="right" valign="top">--<span class="attribution">
 Storm website
-</span></td></tr></table></div><p>With Storm, one can compute, transform and filter data typically in a streaming scenario. As opposed to the rest of the libraries mentioned in this documentation, Apache Storm is a computational framework that is not tied to Map/Reduce itself however it does integrate with Hadoop, mainly through HDFS.</p><h3><a id="storm-installation"></a>Installation<a href="https://github.com/elastic/elasticsearch-hadoop/edit/master/docs/src/reference/asciidoc/core/storm.adoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>In order to use elasticsearch-hadoop, its jar needs to be available in Storm’s classpath. The Storm <a class="ulink" href="https://storm.incubator.apache.org/documentation/Documentation.html" target="_top">documentation</a> covers this in detail but in short, one can either have the jar available on all Storm nodes or have elasticsearch-hadoop part of the jar being deploy (which we recommend). The latter approach allows isolation between the jobs and since the jar is self-contained, can be easily be moved across environments without additional setup making it much more robust.</p><h3><a id="storm-configuration"></a>Configuration<a href="https://github.com/elastic/elasticsearch-hadoop/edit/master/docs/src/reference/asciidoc/core/storm.adoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>The Storm integration supports the configuration options described in the <a class="xref" href="configuration.html" title="Configuration"><em>Configuration</em></a> chapter plus a few more that are specific to Storm, namely:</p><h4><a id="storm-cfg-spout"></a>Spout specific<a href="https://github.com/elastic/elasticsearch-hadoop/edit/master/docs/src/reference/asciidoc/core/storm.adoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+</span></td></tr></table></div><p>With Storm, one can compute, transform and filter data typically in a streaming scenario. As opposed to the rest of the libraries mentioned in this documentation, Apache Storm is a computational framework that is not tied to Map/Reduce itself however it does integrate with Hadoop, mainly through HDFS.</p><div class="important admon"><div class="icon"><img alt="Important" src="images/icons/important.png" /></div><div class="admon_content"><p>Since elasticsearch-hadoop 5.0, Storm 1.0 or higher (older versions cannot be used unfortunately as Storm 1.x broke backwards compatibility though package renaming).</p></div></div><h3><a id="storm-installation"></a>Installation<a href="https://github.com/elastic/elasticsearch-hadoop/edit/master/docs/src/reference/asciidoc/core/storm.adoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>In order to use elasticsearch-hadoop, its jar needs to be available in Storm’s classpath. The Storm <a class="ulink" href="https://storm.apache.org/documentation/Documentation.html" target="_top">documentation</a> covers this in detail but in short, one can either have the jar available on all Storm nodes or have elasticsearch-hadoop part of the jar being deploy (which we recommend). The latter approach allows isolation between the jobs and since the jar is self-contained, can be easily be moved across environments without additional setup making it much more robust.</p><h3><a id="storm-configuration"></a>Configuration<a href="https://github.com/elastic/elasticsearch-hadoop/edit/master/docs/src/reference/asciidoc/core/storm.adoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>The Storm integration supports the configuration options described in the <a class="xref" href="configuration.html" title="Configuration"><em>Configuration</em></a> chapter plus a few more that are specific to Storm, namely:</p><h4><a id="storm-cfg-spout"></a>Spout specific<a href="https://github.com/elastic/elasticsearch-hadoop/edit/master/docs/src/reference/asciidoc/core/storm.adoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="variablelist"><dl class="variablelist"><dt><span class="term">
 <code class="literal">es.storm.spout.reliable</code> (default false)
 </span></dt><dd>
 Indicates whether the dedicated <code class="literal">EsSpout</code> is <span class="emphasis"><em>reliable</em></span>, that is replays the documents in case of failure or not. By default it is set to <code class="literal">false</code> since replaying requires the documents to be kept in memory until are being acknowledged.
@@ -1233,15 +1233,15 @@ the three named fields (<code class="literal">name</code>, <code class="literal"
 
 <style type="text/css">
 	
-		.facebook{background:url("https://static-www.elastic.co/assets/bltda40eebd7c7cae9a/facebook.svg?q=500") no-repeat;}
+		.facebook{background:url("/assets/bltda40eebd7c7cae9a/facebook.svg?q=500") no-repeat;}
 	
-		.twitter{background:url("https://static-www.elastic.co/assets/bltfd3b1511512f4632/twitter.svg?q=500") no-repeat;}
+		.twitter{background:url("/assets/bltfd3b1511512f4632/twitter.svg?q=500") no-repeat;}
 	
-		.linkedin{background:url("https://static-www.elastic.co/assets/blt6b4f6f8d6b96f814/linkedin.svg?q=500") no-repeat;}
+		.linkedin{background:url("/assets/blt6b4f6f8d6b96f814/linkedin.svg?q=500") no-repeat;}
 	
-		.xing{background:url("https://static-www.elastic.co/assets/blta76b2ae2b2f10a98/xing.svg?q=500") no-repeat;}
+		.xing{background:url("/assets/blta76b2ae2b2f10a98/xing.svg?q=500") no-repeat;}
 	
-		.youtube{background:url("https://static-www.elastic.co/assets/blt5761648c9581fb53/youtube.svg?q=500") no-repeat;}
+		.youtube{background:url("/assets/blt5761648c9581fb53/youtube.svg?q=500") no-repeat;}
 	
 </style>
 
@@ -1266,8 +1266,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
    	<script type="text/javascript">
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 </script>
-<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js?q=500"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?q=500"></script>
+<script src="/static/js/jquery.autocomplete.js?q=500"></script>
+<script src="/static/js/script.js?q=500"></script>
 
 
    	
