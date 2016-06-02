@@ -3,34 +3,34 @@ Repo: beats
   filebeat/docs_1.0.1    d25885c  Merge pull request #971 from dedemorton/support_changed_chunklevel
   filebeat/docs_1.1      8faf452  Increment versions for elastic stack products (#1436)
   filebeat/docs_1.2      664f273  add cloudtrailbeat to community beats list (#1737)
-  filebeat/docs_master   41f904b  Stop following symlinks. (#1767)
+  filebeat/docs_master   1cbf9f7  Add docs for supported versions in modules (#1780)
   libbeat/docs_1.0.1     d25885c  Merge pull request #971 from dedemorton/support_changed_chunklevel
   libbeat/docs_1.1       8faf452  Increment versions for elastic stack products (#1436)
   libbeat/docs_1.2       664f273  add cloudtrailbeat to community beats list (#1737)
-  libbeat/docs_master    fbf60df  Remove topbeat references from the doc (#1777)
+  libbeat/docs_master    1cbf9f7  Add docs for supported versions in modules (#1780)
   metricbeat/docs_master 1cbf9f7  Add docs for supported versions in modules (#1780)
   packetbeat/docs_1.0.1  d25885c  Merge pull request #971 from dedemorton/support_changed_chunklevel
   packetbeat/docs_1.1    8faf452  Increment versions for elastic stack products (#1436)
   packetbeat/docs_1.2    664f273  add cloudtrailbeat to community beats list (#1737)
-  packetbeat/docs_master 41f904b  Stop following symlinks. (#1767)
+  packetbeat/docs_master 1cbf9f7  Add docs for supported versions in modules (#1780)
   topbeat/docs_1.0.1     d25885c  Merge pull request #971 from dedemorton/support_changed_chunklevel
   topbeat/docs_1.1       8faf452  Increment versions for elastic stack products (#1436)
   topbeat/docs_1.2       664f273  add cloudtrailbeat to community beats list (#1737)
-  topbeat/docs_master    fbf60df  Remove topbeat references from the doc (#1777)
+  topbeat/docs_master    1cbf9f7  Add docs for supported versions in modules (#1780)
   winlogbeat/docs_1.1    8faf452  Increment versions for elastic stack products (#1436)
   winlogbeat/docs_1.2    664f273  add cloudtrailbeat to community beats list (#1737)
-  winlogbeat/docs_master fbf60df  Remove topbeat references from the doc (#1777)
+  winlogbeat/docs_master 1cbf9f7  Add docs for supported versions in modules (#1780)
 
 Repo: curator
 --------------------------------------------------------------------------------
-  docs/asciidoc_3.3   df6ebee  Fix documentation for the show command
-  docs/asciidoc_3.4   e80458e  Update docs for 3.4.1
-  docs/asciidoc_3.5   7ffc821  Merge pull request #586 from untergeek/3.5.1_docs
-  docs/asciidoc_4.0   12c6e63  Merge branch 'master' into 4.x
+  docs/asciidoc_3.3 df6ebee  Fix documentation for the show command
+  docs/asciidoc_3.4 e80458e  Update docs for 3.4.1
+  docs/asciidoc_3.5 7ffc821  Merge pull request #586 from untergeek/3.5.1_docs
+  docs/asciidoc_4.0 12c6e63  Merge branch 'master' into 4.x
 
 Repo: elasticsearch
 --------------------------------------------------------------------------------
-  docs/community-clients_master adf4712  Make ip fields backward-compatible at query time. #18593
+  docs/community-clients_master b2724c0  Mute failing assertions in IndexWithShadowReplicasIT until fix
   docs/groovy-api_0.90          9078bbf  Merge pull request #14228 from ByronDDelpinal/patch-1
   docs/groovy-api_1.3           84e7421  Backs out early link fix.
   docs/groovy-api_1.4           0555877  Removed docs page header as is now automated by docs build
@@ -40,8 +40,8 @@ Repo: elasticsearch
   docs/groovy-api_2.0           67e3a11  Updated decay-function image in function_score query
   docs/groovy-api_2.1           b92d539  [TEST] disable indexing while relocating
   docs/groovy-api_2.2           ffec1fc  [TEST] disable indexing while relocating
-  docs/groovy-api_2.3           a177a09  Fix filtering of node ids for TransportNodesAction (#18634)
-  docs/groovy-api_master        adf4712  Make ip fields backward-compatible at query time. #18593
+  docs/groovy-api_2.3           95e07f7  Sliced lock contention 2.x
+  docs/groovy-api_master        b2724c0  Mute failing assertions in IndexWithShadowReplicasIT until fix
   docs/java-api_0.90            9078bbf  Merge pull request #14228 from ByronDDelpinal/patch-1
   docs/java-api_1.3             84e7421  Backs out early link fix.
   docs/java-api_1.4             0555877  Removed docs page header as is now automated by docs build
@@ -51,16 +51,16 @@ Repo: elasticsearch
   docs/java-api_2.0             67e3a11  Updated decay-function image in function_score query
   docs/java-api_2.1             b92d539  [TEST] disable indexing while relocating
   docs/java-api_2.2             ffec1fc  [TEST] disable indexing while relocating
-  docs/java-api_2.3             a177a09  Fix filtering of node ids for TransportNodesAction (#18634)
-  docs/java-api_master          adf4712  Make ip fields backward-compatible at query time. #18593
-  docs/perl_master              adf4712  Make ip fields backward-compatible at query time. #18593
+  docs/java-api_2.3             95e07f7  Sliced lock contention 2.x
+  docs/java-api_master          b2724c0  Mute failing assertions in IndexWithShadowReplicasIT until fix
+  docs/perl_master              b2724c0  Mute failing assertions in IndexWithShadowReplicasIT until fix
   docs/plugins_1.7              7079312  Merge pull request #18604 from rusnyder/fnscore-bool-patch
   docs/plugins_2.0              67e3a11  Updated decay-function image in function_score query
   docs/plugins_2.1              b92d539  [TEST] disable indexing while relocating
   docs/plugins_2.2              ffec1fc  [TEST] disable indexing while relocating
-  docs/plugins_2.3              a177a09  Fix filtering of node ids for TransportNodesAction (#18634)
-  docs/plugins_master           adf4712  Make ip fields backward-compatible at query time. #18593
-  docs/python_master            adf4712  Make ip fields backward-compatible at query time. #18593
+  docs/plugins_2.3              95e07f7  Sliced lock contention 2.x
+  docs/plugins_master           b2724c0  Mute failing assertions in IndexWithShadowReplicasIT until fix
+  docs/python_master            b2724c0  Mute failing assertions in IndexWithShadowReplicasIT until fix
   docs/reference_0.90           9078bbf  Merge pull request #14228 from ByronDDelpinal/patch-1
   docs/reference_1.3            84e7421  Backs out early link fix.
   docs/reference_1.4            0555877  Removed docs page header as is now automated by docs build
@@ -70,9 +70,9 @@ Repo: elasticsearch
   docs/reference_2.0            67e3a11  Updated decay-function image in function_score query
   docs/reference_2.1            b92d539  [TEST] disable indexing while relocating
   docs/reference_2.2            ffec1fc  [TEST] disable indexing while relocating
-  docs/reference_2.3            b2dec79  Update reindex.asciidoc (#18687)
-  docs/reference_master         56d86ef  Add upgrade-not-supported warning to alpha release notes
-  docs/resiliency_master        adf4712  Make ip fields backward-compatible at query time. #18593
+  docs/reference_2.3            95e07f7  Sliced lock contention 2.x
+  docs/reference_master         b2724c0  Mute failing assertions in IndexWithShadowReplicasIT until fix
+  docs/resiliency_master        b2724c0  Mute failing assertions in IndexWithShadowReplicasIT until fix
   docs/river_0.90               9078bbf  Merge pull request #14228 from ByronDDelpinal/patch-1
   docs/river_1.3                84e7421  Backs out early link fix.
   docs/river_1.4                0555877  Removed docs page header as is now automated by docs build
@@ -80,7 +80,7 @@ Repo: elasticsearch
   docs/river_1.6                7f9beaf  Java API docs should point to ES ref 1.6
   docs/river_1.7                7079312  Merge pull request #18604 from rusnyder/fnscore-bool-patch
   docs/river_2.0                67e3a11  Updated decay-function image in function_score query
-  docs/ruby_master              adf4712  Make ip fields backward-compatible at query time. #18593
+  docs/ruby_master              b2724c0  Mute failing assertions in IndexWithShadowReplicasIT until fix
 
 Repo: elasticsearch-hadoop
 --------------------------------------------------------------------------------
@@ -88,74 +88,74 @@ Repo: elasticsearch-hadoop
   docs/src/reference/asciidoc_2.1    46f156f  bump version
   docs/src/reference/asciidoc_2.2    c11e37b  2.2.0 release
   docs/src/reference/asciidoc_2.3    cae8b76  2.3.2 release
-  docs/src/reference/asciidoc_master 6a8cadf Bump version
+  docs/src/reference/asciidoc_master 6a8cadf  Bump version
 
 Repo: elasticsearch-js
 --------------------------------------------------------------------------------
-  docs_11.0           8b90ee9  update esvm config to work with latest masters
-  docs_12.0           4fed459  [apis] regenerate
+  docs_11.0 8b90ee9  update esvm config to work with latest masters
+  docs_12.0 4fed459  [apis] regenerate
 
 Repo: elasticsearch-net
 --------------------------------------------------------------------------------
-  docs_1.x            d23ad5b  Move docs into root of docs dir
-  docs_2.x            474f72d  Update documentation
-  docs_master         fe16bb7  Forward port GetMany changes
+  docs_1.x    1fb56d4  Bump  assembly versions
+  docs_2.x    0fc5c45  GeoShapeBase implement IGeoShape
+  docs_master 2504ebf  GeoShapeBase implement IGeoShape
 
 Repo: elasticsearch-php
 --------------------------------------------------------------------------------
-  docs_0.4            ecd9be4  Docs: Fixed broken link.
-  docs_1.0            eaf6e4a  Update travis
-  docs_2.0            e7b8e83  [DOCS] Generate reference docs
-  docs_master         37a572b  Revert "Auto-update endpoints"
+  docs_0.4    ecd9be4  Docs: Fixed broken link.
+  docs_1.0    eaf6e4a  Update travis
+  docs_2.0    e7b8e83  [DOCS] Generate reference docs
+  docs_master 37a572b  Revert "Auto-update endpoints"
 
 Repo: found
 --------------------------------------------------------------------------------
-  docs_1.0            a63fa62  Merge pull request #1013 from elastic/master
+  docs_1.0 a63fa62  Merge pull request #1013 from elastic/master
 
 Repo: guide
 --------------------------------------------------------------------------------
-  ._1.x               130da21  Update 60_restore.asciidoc (#496)
-  ._2.x               b61f7d6  Fix drunken indentation. (#497)
-  ._master            50be03d  Fixed bad links
+  ._1.x    130da21  Update 60_restore.asciidoc (#496)
+  ._2.x    b61f7d6  Fix drunken indentation. (#497)
+  ._master 50be03d  Fixed bad links
 
 Repo: kibana
 --------------------------------------------------------------------------------
-  docs_3.0            80d995c  Merge pull request #5019 from palecur/origin/3.0
-  docs_4.0            cd0dc43  Fixed path to Shield 1.3.
-  docs_4.1            94fbd31  Bump to 4.1.8-snapshot
-  docs_4.2            738b2c1  Merge pull request #6807 from elastic/jasper/backport/6792/6802/4.2
-  docs_4.3            ba4bd84  Merge pull request #6806 from elastic/jasper/backport/6792/6802/4.3
-  docs_4.4            f6b03cc  Merge pull request #7313 from elastic/jasper/backport/7212/4.4
-  docs_4.5            e19395b  Merge pull request #7314 from elastic/jasper/backport/7212/4.5
-  docs_5.0            a99bf69  docs: Updated plugin example url to use alpha3
-  docs_master         1cf2979  Merge pull request #6566 from bevacqua/feature/sort-dimensions-dragging
+  docs_3.0    80d995c  Merge pull request #5019 from palecur/origin/3.0
+  docs_4.0    cd0dc43  Fixed path to Shield 1.3.
+  docs_4.1    4782fb3  Bump to 4.1.9-snapshot
+  docs_4.2    738b2c1  Merge pull request #6807 from elastic/jasper/backport/6792/6802/4.2
+  docs_4.3    ba4bd84  Merge pull request #6806 from elastic/jasper/backport/6792/6802/4.3
+  docs_4.4    f6b03cc  Merge pull request #7313 from elastic/jasper/backport/7212/4.4
+  docs_4.5    e178fe1  Merge pull request #7342 from elastic/jasper/backport/7335/4.5
+  docs_5.0    a99bf69  docs: Updated plugin example url to use alpha3
+  docs_master ef1fb42  Merge pull request #6720 from bevacqua/feature/bouncy-castle
 
 Repo: logstash
 --------------------------------------------------------------------------------
-  docs_1.5            678c871  Update doc links to W3Schools
-  docs_2.0            8936974  Default codec for rabbitmq is json
-  docs_2.1            3331717  Update doc links to W3Schools
-  docs_2.2            7ddfbb7  improve s3 docs
-  docs_2.3            1e74f28  improve s3 docs
-  docs_5.0            5068960  Merge pull request #217 from dedemorton/sync_docs_6.02.16b_5.0
-  docs_master         df0bbf9  Merge pull request #216 from dedemorton/sync_docs_6.02.16b_master
+  docs_1.5    678c871  Update doc links to W3Schools
+  docs_2.0    8936974  Default codec for rabbitmq is json
+  docs_2.1    3331717  Update doc links to W3Schools
+  docs_2.2    7ddfbb7  improve s3 docs
+  docs_2.3    1e74f28  improve s3 docs
+  docs_5.0    5068960  Merge pull request #217 from dedemorton/sync_docs_6.02.16b_5.0
+  docs_master df0bbf9  Merge pull request #216 from dedemorton/sync_docs_6.02.16b_master
 
 Repo: sense
 --------------------------------------------------------------------------------
-  docs_master         2077443  Merge pull request #135 from sergey-alekseev/patch-1
+  docs_master 2077443  Merge pull request #135 from sergey-alekseev/patch-1
 
 Repo: x-plugins
 --------------------------------------------------------------------------------
-  docs/public/graph_2.3           da79d78  Watcher: Fix certain chained input usages not written to history
+  docs/public/graph_2.3           4f5ccff  Merge pull request #2376 from tsullivan/marvel-ui-fix-cluster_stat-fields-for-phone-home-2.3
   docs/public/marvel_2.0          1cdd730  Shield Docs: Fixed link to plugin-descriptor.properties file.
   docs/public/marvel_2.1          2341ebd  Shield Docs: Fixed link to plugin-descriptor.properties file.
   docs/public/marvel_2.2          925ada4  Shield Docs: Fixed link to plugin-descriptor.properties file.
-  docs/public/marvel_2.3          da79d78  Watcher: Fix certain chained input usages not written to history
+  docs/public/marvel_2.3          4f5ccff  Merge pull request #2376 from tsullivan/marvel-ui-fix-cluster_stat-fields-for-phone-home-2.3
   docs/public/marvel_marvel-1.3   92b2aff  Merge branch '1.3-reorganize-docs' of /Users/tsullivan/code/marvel-1.3 into marvel-1.3
   docs/public/shield_2.0          1cdd730  Shield Docs: Fixed link to plugin-descriptor.properties file.
   docs/public/shield_2.1          2341ebd  Shield Docs: Fixed link to plugin-descriptor.properties file.
   docs/public/shield_2.2          925ada4  Shield Docs: Fixed link to plugin-descriptor.properties file.
-  docs/public/shield_2.3          da79d78  Watcher: Fix certain chained input usages not written to history
+  docs/public/shield_2.3          4f5ccff  Merge pull request #2376 from tsullivan/marvel-ui-fix-cluster_stat-fields-for-phone-home-2.3
   docs/public/shield_shield-1.0   13761f4  Refixed bad doc links
   docs/public/shield_shield-1.1   c5d75ca  Refixed bad doc links
   docs/public/shield_shield-1.2   db7f003  Refixed bad doc links
@@ -163,6 +163,6 @@ Repo: x-plugins
   docs/public/watcher_2.0         1cdd730  Shield Docs: Fixed link to plugin-descriptor.properties file.
   docs/public/watcher_2.1         2341ebd  Shield Docs: Fixed link to plugin-descriptor.properties file.
   docs/public/watcher_2.2         925ada4  Shield Docs: Fixed link to plugin-descriptor.properties file.
-  docs/public/watcher_2.3         da79d78  Watcher: Fix certain chained input usages not written to history
+  docs/public/watcher_2.3         4f5ccff  Merge pull request #2376 from tsullivan/marvel-ui-fix-cluster_stat-fields-for-phone-home-2.3
   docs/public/watcher_watcher-1.0 819e861  Fixed Webhook action attributes. Closes #1035
-  docs/public_v5.0.0-alpha3-docs  b8d870f monitoring release notes for v5.0.0-alpha3
+  docs/public_v5.0.0-alpha3-docs  b8d870f  monitoring release notes for v5.0.0-alpha3
